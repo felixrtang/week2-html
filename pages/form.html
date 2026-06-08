@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <section>
+        <h2>表单</h2>
+        <p>这是一份基础表单</p>
+        <form>
+            <fieldset>
+                <legend>账号信息</legend>
+                <label for="userN">账号</label>
+                <input id="userN" type="number" name="userN" required placeholder="123456789" autocomplete="on"><br>
+                <label for="password">密码</label>
+                <input id="password" type="password" name="password" required placeholder="Q4555a444c" autocomplete="on"><br>
+            </fieldset>
+            <fieldset>
+                <legend>基础信息</legend>
+                <label for="username">姓名</label>
+                <input id="username" type="text" name="username" required placeholder="张三" autocomplete="name"><br>
+                <label for="email">邮箱</label>
+                <input id="email" type="email" name="email" required placeholder="123@gmail.com" autocomplete="email"><br>
+                <label for="birthday">生日</label>
+                <input id="birthday" type="datetime" name="birthday" required placeholder="1960/1/1" autocomplete="on"><br>
+                <label for="sex-man">男</label>
+                <input id="sex-man" type="radio" name="sex" value="man" required checked autocomplete="on">
+                <label for="sex-woman">女</label>
+                <input id="sex-woman" type="radio" name="sex" value="woman" required autocomplete="on"><br>
+                爱好：
+                <label for="hobby_basketball">篮球</label>
+                <input id="hobby_basketball" type="checkbox" checked name="hobby" value="basketball">
+                <label for="hobby_reading">阅读</label>
+                <input id="hobby_reading" type="checkbox" name="hobby" value="reading">
+                <label for="hobby_running">跑步</label>
+                <input id="hobby_running" type="checkbox" name="hobby" value="running">
+                <label for="hobby_other">其他</label>
+                <input id="hobby_other" type="checkbox" name="hobby" value="running"><br>
+                地址：
+                <select id="address" name="address" required autocomplete="address">
+                    <option>江苏省</option>
+                    <option>浙江省</option>
+                    <option>安徽省</option>
+                    <option>山东省</option>
+                </select><br>
+                <label for="area_thing">其他:</label>
+                <textarea id="area_thing" name="area_thing" placeholder="你想提些什么建议"></textarea>
+            </fieldset>
+            <input type="submit" value="提交">
+        </form>
+    </section>
+</body>
+</html>
